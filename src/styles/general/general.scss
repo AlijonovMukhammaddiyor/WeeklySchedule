@@ -1,0 +1,25 @@
+$background_color: hsl(0, 0%, 96%);
+$table_color: hsl(0, 0%, 100%);
+$nav_color: hsl(195, 55%, 53%);
+$button_color: hsl(216, 68%, 52%);
+
+$block_color: hsl(0, 0%, 94%);
+$remove_color: #747474;
+
+$text_color_light_button: hsl(0, 0%, 100%);
+$text_color_light_thead: hsl(0, 0%, 0%);
+$text_color_light_block: hsl(0, 0%, 45%);
+
+$border_color: hsl(0, 0%, 90%);
+
+$main_font: "Karla";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Karla";
+}

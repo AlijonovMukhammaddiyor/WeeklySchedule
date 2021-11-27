@@ -1,0 +1,97 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla";
+}
+
+.schedule__container .main {
+  width: 100%;
+  padding: 0 2.6rem 0 2.2rem;
+  margin: 2.4rem auto;
+  font-family: "Karla";
+}
+
+.schedule__container .main .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.schedule__container .main .header .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.schedule__container .main .header .add__btn .btn {
+  padding: 13.5px 19px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #3174d8;
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-family: "Karla";
+  font-weight: 500;
+}
+
+.schedule__container .main .main__container {
+  width: 100%;
+  margin-top: 1.8rem;
+}
+
+.schedule__container .main .main__container table {
+  width: 100%;
+  font-family: "Karla";
+  padding: 0 1rem;
+  border: 1px solid #e6e6e6;
+  background-color: white;
+  -webkit-box-shadow: 0 0 5px #e6e6e6;
+          box-shadow: 0 0 5px #e6e6e6;
+}
+
+.schedule__container .main .main__container table thead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  border-bottom: 1px solid #b4b4b4;
+  padding: 1.1rem 2.4rem;
+}
+
+.schedule__container .main .main__container table thead th {
+  font-weight: 500;
+}
+
+.schedule__container .main .main__container table tbody {
+  outline: none;
+  min-height: 10rem;
+  height: 17rem;
+  width: 100%;
+}
+
+.schedule__container .main .main__container table tbody tr {
+  height: 5rem;
+  min-height: 5rem;
+  width: 100%;
+  text-align: left;
+}
+/*# sourceMappingURL=schedule.css.map */

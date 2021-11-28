@@ -132,6 +132,8 @@ export class API {
 				this.upcoming = {};
 				min_index = -1;
 				break;
+			} else {
+				this.ongoing = {};
 			}
 		}
 		if (min_index > -1) {

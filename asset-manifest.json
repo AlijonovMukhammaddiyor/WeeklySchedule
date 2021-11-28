@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/WeeklySchedule/static/css/main.4d9dbd51.chunk.css",
+    "main.js": "/WeeklySchedule/static/js/main.63c19d74.chunk.js",
+    "main.js.map": "/WeeklySchedule/static/js/main.63c19d74.chunk.js.map",
+    "runtime-main.js": "/WeeklySchedule/static/js/runtime-main.cb16ba38.js",
+    "runtime-main.js.map": "/WeeklySchedule/static/js/runtime-main.cb16ba38.js.map",
+    "static/js/2.9322a309.chunk.js": "/WeeklySchedule/static/js/2.9322a309.chunk.js",
+    "static/js/2.9322a309.chunk.js.map": "/WeeklySchedule/static/js/2.9322a309.chunk.js.map",
+    "index.html": "/WeeklySchedule/index.html",
+    "static/css/main.4d9dbd51.chunk.css.map": "/WeeklySchedule/static/css/main.4d9dbd51.chunk.css.map",
+    "static/js/2.9322a309.chunk.js.LICENSE.txt": "/WeeklySchedule/static/js/2.9322a309.chunk.js.LICENSE.txt",
+    "static/media/Logo.bf7ecc67.svg": "/WeeklySchedule/static/media/Logo.bf7ecc67.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb16ba38.js",
+    "static/js/2.9322a309.chunk.js",
+    "static/css/main.4d9dbd51.chunk.css",
+    "static/js/main.63c19d74.chunk.js"
+  ]
+}

@@ -1,3 +1,16 @@
+# Features
+
+1. Handles any class time. If class start on one day and ends on another, it is displayed on the day it started.
+2.  Can add classes. If there is overlap with existing classes. alert is displayed.
+3.  Can remove classes with a propmt to make sure that user really wants to remove the slot.
+4.  Show if there is any class going on and how much time passed since class started
+5.  Show if there is any class upcoming withing 3 hours if there is no ongoing class.
+6.  Created own API with add_slots, remove_slot, and does_overlap methods.
+7.  Made ClassTime class to convert time of each class to object.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,1 +1,196 @@
 @import "../general/general";
+
+.class__container {
+	.main {
+		width: 100%;
+		padding: 0 1.8rem;
+		margin: 2.8rem auto;
+		font-family: $main_font;
+		.title_class {
+			p {
+				font-size: $title_font_size;
+				font-weight: bold;
+			}
+		}
+		.main__container_class {
+			width: 100%;
+			margin-top: 3rem;
+			background-color: $table_color;
+			height: 20rem;
+			border: 1px solid hsl(0, 0%, 90%);
+			padding: 2.5rem;
+			box-shadow: 0 0 2px #efefef;
+			@include flex($dir: column, $just: space-between, $align: flex-start);
+			.start__time {
+				@include flex($just: flex-start, $gap: 2rem);
+
+				.start__title {
+					font-size: $primary_font_size;
+					font-weight: 500;
+				}
+
+				.actual__time {
+					@include flex($just: center, $gap: 0.5rem);
+
+					input::-webkit-outer-spin-button,
+					input::-webkit-inner-spin-button {
+						-webkit-appearance: none;
+						margin: 0;
+					}
+
+					input {
+						height: 50px;
+						width: 75px;
+						border: 1px solid $border_color;
+						font-size: $primary_font_size;
+						text-align: center;
+						font-family: $main_font;
+						box-shadow: 0 4px 4px $border_color;
+						&:focus {
+							outline: 1px solid rgb(61, 194, 238);
+						}
+					}
+
+					p {
+						font-size: large;
+					}
+
+					.time_minute {
+						width: 75px;
+						height: 50px;
+					}
+
+					.minute_dropdown {
+						@include flex($dir: column, $gap: 0);
+						border: 1px solid $border_color;
+						box-shadow: 0 0 2px $border_color;
+						position: absolute;
+						height: 50px;
+						overflow: hidden;
+						box-shadow: 0 4px 4px $border_color;
+
+						.minute {
+							min-height: 50px;
+							width: 75px;
+							@include flex($just: center);
+							font-size: $primary_font_size;
+							cursor: pointer;
+							background-color: $table_color;
+
+							&:hover {
+								background-color: #b4b4b449;
+							}
+
+							.drop__icon {
+								font-size: 30px;
+								color: $remove_color;
+								// margin-right: 3px;
+							}
+
+							.idrop {
+								transform: rotate(180deg);
+							}
+						}
+
+						.chosen_min {
+							gap: 1px;
+							justify-content: end;
+							border: none;
+						}
+
+						// .chosen_min.back_color {
+						// 	background-color: #b4b4b463;
+						// }
+
+						.minute_20 {
+							border-bottom: 1px solid hsl(0, 0%, 81%);
+							border-top: 1px solid hsl(0, 0%, 81%);
+							p {
+								margin-right: 10px;
+							}
+						}
+
+						.minute_40 {
+							top: 200%;
+							border-top: none;
+							left: 0;
+							p {
+								margin-right: 10px;
+							}
+						}
+					}
+					.drop {
+						height: auto;
+						overflow: visible;
+					}
+				}
+
+				.mdm {
+					@include flex($gap: 0.5rem);
+					.am,
+					.pm {
+						cursor: pointer;
+						height: 50px;
+						width: 75px;
+						border: 1px solid $border_color;
+						@include flex($just: center);
+						font-size: $primary_font_size;
+					}
+					.chosen_mdm {
+						background-color: $mdm_color;
+						color: white;
+					}
+				}
+			}
+
+			.repeatOn {
+				@include flex($gap: 2rem, $just: flex-start);
+				width: 100%;
+				margin-bottom: 1rem;
+
+				.repeat__title {
+					font-size: $primary_font_size;
+					font-weight: 500;
+					min-width: max-content;
+				}
+
+				.days {
+					width: 100%;
+					@include flex($just: space-between, $gap: 0.5rem);
+
+					.day {
+						height: 50px;
+						width: 160px;
+						cursor: pointer;
+						font-size: $primary_font_size;
+						border: 1px solid $border_color;
+						@include flex($align: center, $just: center);
+					}
+
+					.day.chosen_day {
+						background-color: #b4b4b467;
+					}
+				}
+			}
+		}
+
+		.save__btn {
+			text-align: right;
+			margin-top: 1.5rem;
+			button {
+				font-size: 14px;
+				width: 220px;
+				height: 50px;
+				cursor: pointer;
+				background-color: $button_color;
+				font-size: $primary_font_size;
+				color: $text_color_light_button;
+				outline: none;
+				border: none;
+				border-radius: 8px;
+				font-family: $main_font;
+				font-weight: 500;
+			}
+		}
+	}
+}

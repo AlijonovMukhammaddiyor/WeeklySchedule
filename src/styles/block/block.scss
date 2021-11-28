@@ -1,9 +1,43 @@
 @import "../general/general";
 
 .block__container {
-	height: 3rem;
-	width: 8rem;
+	// height: 4rem;
+	width: 9rem;
+	position: relative;
+	border-radius: 10px;
+	background-color: #efefef;
+	padding: 3px 6px;
+
+	@include media_1 {
+		width: 8rem;
+	}
+
+	@include media_2 {
+		width: 6rem;
+	}
+
+	p {
+		color: #747474;
+		font-size: $primary_font_size;
+		@include media_2 {
+			font-size: 16px;
+		}
+	}
 
 	.close__icon {
+		position: absolute;
+		cursor: pointer;
+		top: 4px;
+		right: 5px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		color: white;
+		background-color: #b4b4b4;
+
+		@include media_2 {
+			width: 15px;
+			height: 15px;
+		}
 	}
 }

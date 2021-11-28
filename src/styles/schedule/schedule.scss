@@ -3,7 +3,7 @@
 .schedule__container {
 	.main {
 		width: 100%;
-		padding: 0 2.6rem 0 2.2rem;
+		padding: 0 2.5rem 0 2rem;
 		margin: 2.4rem auto;
 		font-family: $main_font;
 		.header {
@@ -11,7 +11,7 @@
 			justify-content: space-between;
 			align-items: center;
 			.title {
-				font-size: 30px;
+				font-size: $title_font_size;
 				font-weight: bold;
 			}
 
@@ -21,7 +21,7 @@
 					font-size: 14px;
 					cursor: pointer;
 					background-color: $button_color;
-					font-size: 20px;
+					font-size: $primary_font_size;
 					color: $text_color_light_button;
 					outline: none;
 					border: none;
@@ -34,42 +34,74 @@
 
 		.main__container {
 			width: 100%;
-			margin-top: 1.8rem;
+			margin: auto;
+			margin-top: 2.2rem;
+			background-color: #ffff;
+			min-height: 22rem;
+			border: 1px solid hsl(0, 0%, 90%);
+			box-shadow: 0 0 2px hsl(0, 0%, 90%);
+			padding: 1rem 1.2rem;
+			@include flex($dir: column, $just: flex-start);
+			position: relative;
 
-			table {
+			.head {
+				@include flex($just: space-between, $gap: 20px);
+				padding: 0.3rem 0 6px;
 				width: 100%;
-				font-family: $main_font;
-				padding: 0 1rem;
-				border: 1px solid $border_color;
-				background-color: $table_color;
-				box-shadow: 0 0 5px $border_color;
-				thead {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					// height: px;
-					font-size: 20px;
-					border-bottom: 1px solid #b4b4b4;
-					padding: 1.1rem 2.4rem;
-
-					th {
-						font-weight: 500;
-					}
-				}
-
-				tbody {
-					outline: none;
-					tr {
-						height: 5rem;
-						min-height: 5rem;
-						width: 100%;
-						text-align: left;
-					}
-					min-height: 10rem;
-					height: 17rem;
-					width: 100%;
+				border-bottom: 1px solid $border_color;
+				p {
+					font-size: $primary_font_size;
+					font-weight: 500;
+					width: 14%;
+					text-align: center;
 				}
 			}
+
+			.blocks {
+				width: 100%;
+				min-height: 17rem;
+				@include flex($just: space-between, $gap: auto, $align: flex-start);
+				position: relative;
+				overflow: hidden;
+
+				.weekday {
+					// text-align: left;
+					min-width: 11%;
+					min-height: 17rem;
+					@include flex($just: flex-start, $align: flex-start, $dir: column);
+				}
+
+				.today {
+					padding: 10px;
+					border-radius: 10px;
+					background-color: rgba(173, 216, 230, 0.678);
+				}
+			}
+		}
+
+		.info {
+			width: 100%;
+			margin: auto;
+			margin-top: 2rem;
+			padding: 10px;
+			text-align: center;
+			border-radius: 10px;
+
+			p {
+				color: #333;
+				font-size: $primary_font_size;
+			}
+		}
+
+		.ongoing {
+			background-color: #4bb543;
+			p {
+				color: yellow;
+			}
+		}
+
+		.upcoming {
+			background-color: #ffe6008a;
 		}
 	}
 }

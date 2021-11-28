@@ -9,10 +9,17 @@ $remove_color: #747474;
 $text_color_light_button: hsl(0, 0%, 100%);
 $text_color_light_thead: hsl(0, 0%, 0%);
 $text_color_light_block: hsl(0, 0%, 45%);
+$mdm_color: #959595;
 
-$border_color: hsl(0, 0%, 90%);
+$border_color: #b4b4b4;
 
 $main_font: "Karla";
+$primary_font_size: 20px;
+$title_font_size: 30px;
+
+$breakpoint_1: 1150px;
+$breakpoint_2: 1024px;
+$breakpoint_2: 860px;
 
 * {
 	box-sizing: border-box;
@@ -22,4 +29,24 @@ $main_font: "Karla";
 
 body {
 	font-family: "Karla";
+}
+
+@mixin flex($dir: row, $just: space-between, $align: center, $gap: 1rem) {
+	display: flex;
+	align-items: $align;
+	justify-content: $just;
+	flex-direction: $dir;
+	gap: $gap;
+}
+
+@mixin media_1 {
+	@media (max-width: $breakpoint_1) {
+		@content;
+	}
+}
+
+@mixin media_2 {
+	@media (max-width: $breakpoint_2) {
+		@content;
+	}
 }

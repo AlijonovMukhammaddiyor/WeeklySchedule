@@ -8,4 +8,339 @@
 body {
   font-family: "Karla";
 }
+
+.class__container .main {
+  width: 100%;
+  padding: 0 1.8rem;
+  margin: 2.8rem auto;
+  font-family: "Karla";
+}
+
+.class__container .main .title_class p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.class__container .main .main__container_class {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: white;
+  height: 20rem;
+  border: 1px solid #e6e6e6;
+  padding: 2.5rem;
+  -webkit-box-shadow: 0 0 2px #efefef;
+          box-shadow: 0 0 2px #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.class__container .main .main__container_class .start__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+}
+
+.class__container .main .main__container_class .start__time .start__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.class__container .main .main__container_class .start__time .actual__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+}
+
+.class__container .main .main__container_class .start__time .actual__time input::-webkit-outer-spin-button,
+.class__container .main .main__container_class .start__time .actual__time input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.class__container .main .main__container_class .start__time .actual__time input {
+  height: 50px;
+  width: 75px;
+  border: 1px solid #b4b4b4;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Karla";
+  -webkit-box-shadow: 0 4px 4px #b4b4b4;
+          box-shadow: 0 4px 4px #b4b4b4;
+}
+
+.class__container .main .main__container_class .start__time .actual__time input:focus {
+  outline: 1px solid #3dc2ee;
+}
+
+.class__container .main .main__container_class .start__time .actual__time p {
+  font-size: large;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .time_minute {
+  width: 75px;
+  height: 50px;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .minute_dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+  border: 1px solid #b4b4b4;
+  -webkit-box-shadow: 0 0 2px #b4b4b4;
+          box-shadow: 0 0 2px #b4b4b4;
+  position: absolute;
+  height: 50px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 4px #b4b4b4;
+          box-shadow: 0 4px 4px #b4b4b4;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .minute_dropdown .minute {
+  min-height: 50px;
+  width: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .minute_dropdown .minute:hover {
+  background-color: #b4b4b449;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .minute_dropdown .minute .drop__icon {
+  font-size: 30px;
+  color: #747474;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .minute_dropdown .minute .idrop {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.class__container .main .main__container_class .start__time .actual__time .minute_dropdown .chosen_min {
+  gap: 1px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border: none;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .minute_dropdown .minute_20 {
+  border-bottom: 1px solid #cfcfcf;
+  border-top: 1px solid #cfcfcf;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .minute_dropdown .minute_20 p {
+  margin-right: 10px;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .minute_dropdown .minute_40 {
+  top: 200%;
+  border-top: none;
+  left: 0;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .minute_dropdown .minute_40 p {
+  margin-right: 10px;
+}
+
+.class__container .main .main__container_class .start__time .actual__time .drop {
+  height: auto;
+  overflow: visible;
+}
+
+.class__container .main .main__container_class .start__time .mdm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+}
+
+.class__container .main .main__container_class .start__time .mdm .am,
+.class__container .main .main__container_class .start__time .mdm .pm {
+  cursor: pointer;
+  height: 50px;
+  width: 75px;
+  border: 1px solid #b4b4b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  font-size: 20px;
+}
+
+.class__container .main .main__container_class .start__time .mdm .chosen_mdm {
+  background-color: #959595;
+  color: white;
+}
+
+.class__container .main .main__container_class .repeatOn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.class__container .main .main__container_class .repeatOn .repeat__title {
+  font-size: 20px;
+  font-weight: 500;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.class__container .main .main__container_class .repeatOn .days {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+}
+
+.class__container .main .main__container_class .repeatOn .days .day {
+  height: 50px;
+  width: 160px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 1px solid #b4b4b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+}
+
+.class__container .main .main__container_class .repeatOn .days .day.chosen_day {
+  background-color: #b4b4b467;
+}
+
+.class__container .main .save__btn {
+  text-align: right;
+  margin-top: 1.5rem;
+}
+
+.class__container .main .save__btn button {
+  font-size: 14px;
+  width: 220px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #3174d8;
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-family: "Karla";
+  font-weight: 500;
+}
 /*# sourceMappingURL=class.css.map */

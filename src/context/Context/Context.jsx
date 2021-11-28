@@ -1,8 +1,12 @@
 import { createContext, useReducer, useEffect } from "react";
 import Reducer from "../Reducer/Reducer";
+import { API } from "../../components/time/API";
 
 const INITIAL_STATE = {
-	classes: JSON.parse(localStorage.getItem("classes")) || [],
+	// {day:{start:{hour:, minute:}, end:{hour:, minute:}}}
+	classes: JSON.parse(localStorage.getItem("classes"))
+		? new API(JSON.parse(localStorage.getItem("classes")))
+		: new API({}),
 	error: false,
 };
 
@@ -13,7 +17,7 @@ export const ContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		localStorage.setItem("classes", JSON.stringify(state.classes));
-	}, [state.classes]);
+	});
 
 	return (
 		<Context.Provider

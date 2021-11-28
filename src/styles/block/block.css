@@ -10,7 +10,52 @@ body {
 }
 
 .block__container {
-  height: 3rem;
-  width: 8rem;
+  width: 9rem;
+  position: relative;
+  border-radius: 10px;
+  background-color: #efefef;
+  padding: 3px 6px;
+}
+
+@media (max-width: 1150px) {
+  .block__container {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .block__container {
+    width: 6rem;
+  }
+}
+
+.block__container p {
+  color: #747474;
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .block__container p {
+    font-size: 16px;
+  }
+}
+
+.block__container .close__icon {
+  position: absolute;
+  cursor: pointer;
+  top: 4px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  background-color: #b4b4b4;
+}
+
+@media (max-width: 1024px) {
+  .block__container .close__icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 /*# sourceMappingURL=block.css.map */

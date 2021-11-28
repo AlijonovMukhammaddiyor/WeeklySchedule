@@ -1,7 +1,7 @@
 # Features
 
-1. Handles any class time. If class start on one day and ends on another, it is displayed on the day it started.
-2.  Can add classes. If there is overlap with existing classes. alert is displayed.
+1. Handles any class time. If class starts on one day and ends on another, it is displayed on the day it started.
+2.  Can add classes. If there is an overlap with the existing classes. An alert is displayed.
 3.  Can remove classes with a propmt to make sure that user really wants to remove the slot.
 4.  Show if there is any class going on and how much time passed since class started
 5.  Show if there is any class upcoming withing 3 hours if there is no ongoing class.
